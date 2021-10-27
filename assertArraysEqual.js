@@ -1,3 +1,5 @@
+// This function eqArrays compares two arrays for a perfect match.
+// But it doesn't compare nested arrays or arrays of objects.
 const eqArrays = function (array1, array2) {
   let isEqual = false;
   for (let i = 0; i < array1.length; i++) {
@@ -9,9 +11,9 @@ const eqArrays = function (array1, array2) {
 // This function assertArraysEqual takes in two arrays and console.log(s) an appropriate message to the console
 const assertArraysEqual = function (array1, array2) {
   if (eqArrays(array1, array2) === true) {
-    console.log(`✅✅✅ Assertion Passed`);
+    console.log('✅✅✅ Assertion Passed');
   } else {
-    console.log(`🔴🔴🔴 Assertion Failed`);
+    console.log('🔴🔴🔴 Assertion Failed');
   }
 };
 
