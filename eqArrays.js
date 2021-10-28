@@ -15,15 +15,19 @@ const eqArrays = function (array1, array2) {
     isEqual = true;
     return isEqual;
   }
+  if(array1.length !== array2.length) {
+    return false;e
+  }
   for (let i = 0; i < array1.length; i++) {
     array1[i] === array2[i] ? isEqual = true : isEqual = false;
   }
   return isEqual;
 };
 
+assertEqual(eqArrays([], []), true);
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
 
-assertEqual(eqArrays([["1", "2"], ["3", "4"]], [["1", "2"], ["3", "4"]]), false);
+// assertEqual(eqArrays([["1", "2"], ["3", "4"]], [["1", "2"], ["3", "4"]]), false);
