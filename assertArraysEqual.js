@@ -13,12 +13,12 @@ const eqArrays = function (array1, array2) {
 };
 
 // This function assertArraysEqual takes in two arrays and console.log(s) an appropriate message to the console
-const assertArraysEqual = function (array1, array2) {
-  const resultOfEqArrays = eqArrays(array1, array2);
+const assertArraysEqual = function (actual, expected) {
+  const resultOfEqArrays = eqArrays(actual, expected);
   if (resultOfEqArrays === true) {
-    console.log(`✅✅✅ Assertion Passed: ${array1} === ${array2}`);
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`🔴🔴🔴 Assertion Failed: ${array1} !== ${array2}`);
+    console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 

@@ -16,7 +16,7 @@ const eqArrays = function (array1, array2) {
     return isEqual;
   }
   if(array1.length !== array2.length) {
-    return false;e
+    return false;
   }
   for (let i = 0; i < array1.length; i++) {
     array1[i] === array2[i] ? isEqual = true : isEqual = false;
