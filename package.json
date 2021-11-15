@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@telhe1234/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lotide includes functions that manipulates arrays and objects which make Javascript easier.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,10 @@
     "url": "git+https://github.com/telhe1234/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name" : "Taha El-Helwani",
+    "email" : "helwanitaha@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/telhe1234/lotide/issues"

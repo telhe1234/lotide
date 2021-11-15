@@ -1,4 +1,4 @@
-
+// This function returns the middle most element of an array in the case of an array with odd length, and it returns the two middle most elements in the case of an array with even length.
 // ACTUAL FUNCTION
 const middle = function(array) {
   let arrCopy = array;
